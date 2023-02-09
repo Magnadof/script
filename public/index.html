@@ -1,104 +1,14 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Ecorp Network</title>
+    <title>Sword Art Online</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #333;
-      }
-      
-      .container {
-        max-width: 1080px;
-        margin: 0 auto;
-      }
-      
-      .header {
-        background-color: #fff;
-        padding: 20px;
-        border-bottom: 1px solid #ddd;
-      }
-      
-      .header h1 {
-        margin: 0;
-        font-size: 36px;
-        font-weight: bold;
-        color: #333;
-      }
-      
-      .shows-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      
-      .show {
-        background-color: #fff;
-        width: calc(33.33% - 20px);
-        margin-bottom: 20px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #ddd;
-        transition: all 0.3s;
-      }
-      
-      .show:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px #ddd;
-      }
-      
-      .show img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        margin-bottom: 10px;
-        border-radius: 10px 10px 0 0;
-      }
-      
-      .show h2 {
-        margin: 0;
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 10px;
-      }
-      
-      .show p {
-        margin: 0;
-        font-size: 18px;
-        color: #333;
+        background-image: url('https://i.imgur.com/VvZ9MjL.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1>Ecorp Network</h1>
-      </header>
-      <ul class="shows-list">
-      </ul>
-    </div>
-    
-    <script>
-      const shows = [
-        { name: "Breaking Bad", image: "https://image.tmdb.org/t/p/original/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg" },
-        { name: "Stranger Things", image: "https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg", description:'minha benga' },
-        { name: "Megan", image: "https://media.fstatic.com/Cd9S_A6jndy9DJSAvJJO8CR4BE8=/210x303/smart/filters:format(webp)/media/movies/covers/2022/10/m3gan-movie-poster-101122-b4ab8ccbbc18430eacf8a1c8ecf2ada6.jpg" }]
-      
-      const showsList = document.querySelector(".shows-list")
-      shows.forEach(show => {
-        const showElement = document.createElement("li")
-        showElement.classList.add("show")
-        showElement.innerHTML = `
-          <img src="${show.image}" alt="${show.name}">
-          <h2>${show.name}</h2>
-          <p>${show.description}</p>
-        `
-        showsList.appendChild(showElement)
-      })
-    </script>
   </body>
 </html>
-
